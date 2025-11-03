@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ebpl-msd1-api
+    env: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
